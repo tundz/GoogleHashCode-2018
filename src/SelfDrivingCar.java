@@ -59,7 +59,6 @@ public class SelfDrivingCar {
         }
     }
 
-
     public static ArrayList<Integer> assignedRidesToAVehicle(List<Ride> rides) {
         PriorityQueue<RideDistance> queue = new PriorityQueue<RideDistance>();
         long steps = 0;
@@ -105,15 +104,13 @@ public class SelfDrivingCar {
                     steps += len;
                     break;
                 }
-
             }
 
             index++;
         }
         return chosenRides;
     }
-
-
+    
     public static class Ride {
         int RideNum;
         int earliestTime;
